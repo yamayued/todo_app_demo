@@ -1,0 +1,21 @@
+#!/bin/bash
+# GitHub Push Script for Cocorobi ToDo App
+
+echo "GitHubにプッシュするためのスクリプトです。"
+echo "以下のコマンドを手動で実行してください："
+echo ""
+echo "cd /mnt/c/Users/owner/OneDrive/デスクトップ/my_project/todo_app_demo"
+echo "git push https://yamayued:YOUR_TOKEN@github.com/yamayued/todo_app_demo.git main"
+echo ""
+echo "YOUR_TOKENの部分を実際のGitHub Personal Access Tokenに置き換えてください。"
+echo ""
+echo "または、以下のコマンドを使用："
+echo ""
+echo "git push origin main"
+echo "Username: yamayued"
+echo "Password: [あなたのPersonal Access Token]"
+echo ""
+echo "トークンの作成方法："
+echo "1. https://github.com/settings/tokens/new にアクセス"
+echo "2. 'repo' スコープを選択"
+echo "3. 'Generate token' をクリック"

@@ -27,9 +27,11 @@ jobs:
           node-version: '20'
           
       - name: Install dependencies
+        working-directory: ./todo-app-react
         run: npm ci
         
       - name: Build
+        working-directory: ./todo-app-react
         run: npm run build
         
       - name: Setup Pages
@@ -38,7 +40,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist'
+          path: './todo-app-react/dist'
           
   deploy:
     environment:
