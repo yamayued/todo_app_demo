@@ -145,7 +145,3 @@ npm run build
 ## 貢献
 
 プルリクエストは歓迎します。大きな変更の場合は、まずissueを開いて変更内容について議論してください。
-
-## 作者
-
-Cocorobi × Claude Code 🤖
