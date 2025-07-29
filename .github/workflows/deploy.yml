@@ -37,10 +37,17 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v4
         
+      - name: Prepare deployment
+        run: |
+          mkdir -p deploy/todo
+          cp -r todo-app-react/dist/* deploy/todo/
+          cp index.html deploy/
+          cp CNAME deploy/
+        
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './todo-app-react/dist'
+          path: './deploy'
           
   deploy:
     environment:
